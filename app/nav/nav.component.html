@@ -1,0 +1,12 @@
+<p>nav works!</p>
+<ul>
+    <li><a routerLink='/admin' routerLinkActive="active">admin</a></li>
+    <li><a [routerLink]="[ '/doctor' ]" routerLinkActive="active">doctor</a></li>
+    <li><a [routerLink]="[ '/base' ]" routerLinkActive="active">base</a></li>
+    <li><a [routerLink]="[ '/form' ]" routerLinkActive="active">form</a></li>
+    <li><a [routerLink]="[ '/main' ]" routerLinkActive="active">main</a></li>
+    <li><a [routerLink]="[ '/pass' ]" routerLinkActive="active">pass</a></li>
+    <li><a [routerLink]="[ '/now' ]" routerLinkActive="active">now</a></li>
+    <li><a [routerLink]="[ '/pass',5 ]" routerLinkActive="active">5</a></li>
+    <li><a [routerLink]="[ '/pass' ,'name']" routerLinkActive="active">name</a></li>
+</ul>

@@ -1,0 +1,31 @@
+<p>now works!</p>
+{{img}}
+<img [src]="img" alt="" srcset="">
+<div></div>
+class
+<div [class.one]="class2">class</div>
+<div [class]="{'two':class2}">class</div>
+style
+<div [style.font-size]="class3 + 'px'">style</div>
+<div [style]="{'font-size':class2?'5px':'10px'}">style</div>
+<div *ngIf="class2">ng if</div>
+<div *ngIf="!class2;else elseTemplate">ngIf else</div>
+<ng-template #elseTemplate>
+    else
+</ng-template>
+<span [ngSwitch]="class3">
+<p *ngSwitchCase="5">
+5
+</p>
+<p *ngSwitchCase="4">
+4
+</p>
+<p *ngSwitchDefault>
+1
+</p>
+</span>
+<ul>
+    <li *ngFor="let item of data;let x=index">{{item}} -> index =>{{x}}</li>
+</ul>
+<div [ngClass]="{'one': true}">ngClass</div>
+<div [ngStyle]="{'font-size': expression}">ngStyle ngStyle</div>
